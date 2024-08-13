@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>KC.DropIns</RootNamespace>
+  <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageId>KC.DropIns.FrontierCore</PackageId>
+    <AssemblyName>KC.DropIns.FrontierCore</AssemblyName>
+  </PropertyGroup>
+
+
+<PropertyGroup>
+<PackageReadmeFile>README.md</PackageReadmeFile>
+<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <IsPackable>true</IsPackable>
+    <Version>1.0.8</Version>
+    <Title>FrontierCore</Title>
+    <Authors>Kyle Crowder</Authors>
+
+    <Description>Stores and prioritizes Urls for crawling. 
+    Library also handles duplicates, and also will respect a sites robots.txt file. 
+    Will also throttle host access by access time or access counts</Description>
+
+    <PackageTags>UrlFrontier,SEO,robots.txt,polite,queue,Crawler,WebCrawler</PackageTags>
+    <Copyright>Copyright ©Kyle Crowder 2024</Copyright>
+    <PackageLicenseExpression>GPL</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Oldskoolzroolz/UrlFrontierLite</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Oldskoolzroolz/UrlFrontierLite</RepositoryUrl>
+    <PackageVersion>1.0.8</PackageVersion>
+<IncludeBuildOutput>true</IncludeBuildOutput>
+</PropertyGroup>
+
+
+
+
+<ItemGroup>
+    <None Include="docs\README.md" Pack="true" PackagePath="\" />
+</ItemGroup>
+
+
+
+
+<ItemGroup>
+  <PackageReference Include="nlog" Version="5.3.2" />
+</ItemGroup>
+
+</Project>
